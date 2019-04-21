@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138666937-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-138666937-2');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BotThoughts</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+    .vertical-center {
+        min-height: 90%;  /* Fallback for browsers do NOT support vh unit */
+        min-height: 90vh; /* These two lines are counted as one :-)       */
+
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+    header, main, footer {
+        flex-shrink: 0;
+    }
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+.footer,
+.push {
+  height: 50px;
+}
+    </style>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!-- Page Content -->
+    <div class="vertical-center text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12-col-sm-12">
+                    <h1>
+                        <span id="result"></span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="push"></div>
+    <footer class="footer text-center">An AI that generates stories using <a href="https://openai.com/blog/better-language-models/">GPT-2-small</a> trained on r/ShowerThoughts! Made by <a href="https://twitter.com/eukaryote314">@eukaryote314</a>. WARNING: Outputs <em>may</em> be NSFW! Opinions expressed by the bot are not endorsed by me.</footer>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+
+</body>
+
+</html>
