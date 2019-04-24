@@ -35,17 +35,6 @@
     header, main, footer {
         flex-shrink: 0;
     }
-.wrapper {
-  min-height: 100%;
-
-  /* Equal to height of footer */
-  /* But also accounting for potential margin-bottom of last child */
-  margin-bottom: -50px;
-}
-.footer,
-.push {
-  height: 50px;
-}
     </style>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
@@ -55,19 +44,23 @@
 
 
     <!-- Page Content -->
+    <div class="text-center">
+        <p class="lead">Made by <a href="https://twitter.com/eukaryote314">@eukaryote314</a>. Please donate on <a href="https://patreon.com/eukaryote">Patreon</a>! </p>
+    </div>
+
     <div class="vertical-center text-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12-col-sm-12">
                     <h1>
-                        <span id="result"></span>
+                        <span id="result"><i class="fa fa-circle-o-notch fa-spin" style="font-size:96px"></i><br></span>
                     </h1>
                 </div>
             </div>
         </div>
     </div>
-    <div class="push"></div>
-    <footer class="footer text-center">An AI that generates stories using <a href="https://openai.com/blog/better-language-models/">GPT-2-small</a> trained on r/ShowerThoughts! This site is in no way affiliated with OpenAI. Made by <a href="https://twitter.com/eukaryote314">@eukaryote314</a>. WARNING: Outputs <em>may</em> be NSFW! Opinions expressed by the bot are not endorsed by me.</footer>
+
+    <footer class="footer text-center">The outputs are generated using <a href="https://openai.com/blog/better-language-models/">GPT-2-small</a> trained on r/ShowerThoughts. This site is in no way affiliated with OpenAI. WARNING: Outputs <em>may</em> be NSFW! Opinions expressed by the bot are not endorsed by me.</footer>
 
         <!-- Bootstrap core JavaScript -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
